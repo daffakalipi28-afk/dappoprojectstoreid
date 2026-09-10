@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DappoProjectStore</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#090909;color:#fff}
+header{position:sticky;top:0;z-index:10;background:#0d0d0df2;border-bottom:1px solid #242424;backdrop-filter:blur(10px)}
+.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:900;letter-spacing:.5px}.logo span{color:#f2c94c}
+nav a{color:#bbb;text-decoration:none;margin-left:18px;font-size:14px}nav a:hover{color:#f2c94c}
+.hero{max-width:1100px;margin:auto;padding:75px 20px 60px;text-align:center}
+.badge{display:inline-block;border:1px solid #3a3a3a;border-radius:30px;padding:8px 14px;color:#f2c94c;font-size:12px;margin-bottom:20px}
+h1{font-size:clamp(40px,9vw,76px);line-height:.95;margin-bottom:18px}
+h1 span{color:#f2c94c}
+.hero p{max-width:600px;margin:0 auto 28px;color:#aaa;line-height:1.7}
+.btn{display:inline-block;background:#f2c94c;color:#111;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:800}
+section{max-width:1100px;margin:auto;padding:45px 20px}
+.title{font-size:28px;margin-bottom:8px}.sub{color:#888;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#111;border:1px solid #262626;border-radius:16px;padding:20px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#555}
+.icon{font-size:30px;margin-bottom:15px}.card h3{margin-bottom:8px}.card p{color:#999;font-size:14px;line-height:1.6;min-height:45px}
+.price{color:#f2c94c;font-size:19px;font-weight:900;margin:17px 0}
+.buy{display:block;text-align:center;background:#1d1d1d;color:#fff;padding:11px;border-radius:9px;text-decoration:none;border:1px solid #333}
+.buy:hover{background:#f2c94c;color:#111}
+.about{background:#111;border:1px solid #262626;border-radius:18px;padding:28px;line-height:1.8;color:#aaa}
+.about strong{color:#fff}
+.contact{text-align:center}
+footer{text-align:center;border-top:1px solid #222;padding:25px 20px;color:#666;font-size:13px}
+@media(max-width:700px){.grid{grid-template-columns:1fr 1fr}nav a{margin-left:8px;font-size:12px}.hero{padding-top:55px}}
+@media(max-width:450px){.grid{grid-template-columns:1fr}nav a:nth-child(1){display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">DAPPO<span>PROJECT</span>STORE</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="badge">DIGITAL STORE • DAPPO PROJECT</div>
+  <h1>DAPPO<br><span>PROJECT STORE</span></h1>
+  <p>Tempat berbagai kebutuhan digital, jasa desain, dan produk kreatif. Simple, cepat, dan dibuat untuk komunitas.</p>
+  <a class="btn" href="#produk">Lihat Produk</a>
+</section>
+
+<section id="produk">
+  <h2 class="title">Produk & Jasa</h2>
+  <p class="sub">Layanan DappoProjectStore. Harga dibuat sederhana, karena hidup sudah cukup ribet.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🔊</div>
+      <h3>Jasa Nata Sound</h3>
+      <p>Jasa nata sound untuk kebutuhan acara, komunitas, dan sound system.</p>
+      <div class="price">Harga Menyesuaikan</div>
+      <a class="buy" href="https://wa.me/6283184811242?text=Halo%20DappoProjectStore,%20saya%20ingin%20pesan%20jasa%20nata%20sound.">Pesan</a>
+    </div>
+    <div class="card">
+      <div class="icon">🎵</div>
+      <h3>Jasa Buat ID Lagu</h3>
+      <p>Pembuatan ID lagu sesuai kebutuhan.</p>
+      <div class="price">Rp2.000 / ID</div>
+      <a class="buy" href="https://wa.me/6283184811242?text=Halo,%20saya%20ingin%20pesan%20ID%20lagu.">Pesan</a>
+    </div>
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Jasa Desain Logo</h3>
+      <p>Desain logo custom untuk pribadi, tim, komunitas, atau usaha.</p>
+      <div class="price">Rp1.000</div>
+      <a class="buy" href="https://wa.me/6283184811242?text=Halo,%20saya%20ingin%20pesan%20desain%20logo.">Pesan</a>
+    </div>
+    <div class="card">
+      <div class="icon">🎬</div>
+      <h3>Jasa Buat VT Custom</h3>
+      <p>Pembuatan VT custom sesuai konsep dan kebutuhan kamu.</p>
+      <div class="price">Rp1.000 / ID</div>
+      <a class="buy" href="https://wa.me/6283184811242?text=Halo,%20saya%20ingin%20pesan%20VT%20custom.">Pesan</a>
+    </div>
+  </div>
+</section>
+
+<section id="tentang">
+  <h2 class="title">Tentang DappoProjectStore</h2>
+  <div class="about">
+    <strong>DappoProjectStore</strong> adalah toko digital dari Dappo Project yang menyediakan jasa nata sound, pembuatan ID lagu, desain logo, dan VT custom. Fokusnya sederhana: layanan yang jelas dan proses pemesanan yang gampang.
+  </div>
+</section>
+
+<section class="contact" id="kontak">
+  <h2 class="title">Butuh sesuatu?</h2>
+  <p class="sub">Hubungi DappoProjectStore untuk pemesanan atau custom request.</p>
+  <a class="btn" href="https://wa.me/6283184811242?text=Halo%20DappoProjectStore!">Chat WhatsApp</a>
+</section>
+</main>
+
+<footer>© 2026 DappoProjectStore • Dappo Project</footer>
+</body>
+</html>
